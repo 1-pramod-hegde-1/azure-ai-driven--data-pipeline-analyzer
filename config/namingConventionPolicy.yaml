@@ -1,0 +1,20 @@
+namingRules:
+  dataFactory:
+    mustStartWithLetterOrNumber: true
+    allowedCharacters: "[a-zA-Z0-9-]"
+    maxLength: 63
+    minLength: 3
+    noConsecutiveDashes: true
+    policyViolationCode: "NC001"
+
+  linkedServicesDatasetsPipelines:
+    mustStartWithLetter: true
+    disallowedCharacters: "[.+?/<>*%&:]"
+    allowDashes: false
+    policyViolationCode: "NC002"
+
+  integrationRuntime:
+    allowedCharacters: "[a-zA-Z0-9-]"
+    mustStartAndEndWithLetterOrNumber: true
+    noConsecutiveDashes: true
+    policyViolationCode: "NC003"

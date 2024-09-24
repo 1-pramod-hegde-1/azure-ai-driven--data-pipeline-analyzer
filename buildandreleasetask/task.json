@@ -1,0 +1,42 @@
+{
+  "id": "fcd85d7b-39bf-4492-962c-3b7768b3d3a6",
+  "name": "az-data-pipeline-static-analysis",
+  "friendlyName": "Azure Data Pipeline Static Analysis",
+  "description": "This task will analyze the ADF and Synapse pipelines with default policy rules",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Pramod Hegde",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "instanceNameFormat": "Analyze Azure Data Pipeline",
+  "inputs": [
+    {
+      "name": "pipelineDirectory",
+      "type": "filePath",
+      "label": "Pipeline Directory",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Path to the directory containing Azure Data Factory pipeline files"
+    },
+    {
+      "name": "policyRulesPath",
+      "type": "filePath",
+      "label": "Policy Rules File Path",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Path to the policy rules file"
+    }
+  ],
+  "execution": {
+    "Node10": {
+      "target": "dist/index.js"
+    }
+  }
+}

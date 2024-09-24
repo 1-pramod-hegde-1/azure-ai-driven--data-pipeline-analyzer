@@ -1,0 +1,8 @@
+policies:
+  - name: Parallel Processing Rule
+    description: Ensure no variable is being set inside a parallel ForEach activity.
+    path: ./parallelProcessingPolicy.yaml
+
+  - name: Naming Convention Rule
+    description: Ensure all Data Factory artifacts follow the official naming conventions.
+    path: ./namingConventionPolicy.yaml

@@ -1,0 +1,26 @@
+{
+  "name": "az-data-pipeline-static-analysis",
+  "version": "1.0.0",
+  "description": "This task will analyze the ADF and Synapse pipelines with default policy rules",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --clearCache && jest --coverage"
+  },
+  "author": "Pramod Hegde",
+  "license": "MIT",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "@types/jest-when": "^3.5.4",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.8.7",
+    "@types/q": "^1.5.7",
+    "jest": "^29.7.0",
+    "jest-when": "^3.6.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}

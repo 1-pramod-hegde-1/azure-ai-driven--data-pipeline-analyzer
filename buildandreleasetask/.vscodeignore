@@ -1,0 +1,24 @@
+# Node modules
+node_modules
+
+# VS Code directories
+.vscode
+.history
+
+# Git directories
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Dist directory
+dist
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build directories
+build
+out

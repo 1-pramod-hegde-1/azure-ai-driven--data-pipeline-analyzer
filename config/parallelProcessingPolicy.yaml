@@ -1,0 +1,10 @@
+rules:
+  foreach_parallel:
+    description: "Warn if ForEach activity runs in parallel."
+    warning_message: "ForEach activity running in parallel detected."
+    policyViolationCode: "PP001"
+
+  set_variable_in_parallel:
+    description: "Warn if SetVariable is inside a parallel ForEach loop."
+    warning_message: "SetVariable inside ForEach loop running in parallel can lead to data inconsistency."
+    policyViolationCode: "PP002"

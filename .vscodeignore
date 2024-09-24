@@ -1,0 +1,24 @@
+# directories
+node_modules/
+dist/
+tasks/az-data-pipeline-static-analysis/node_modules/
+tasks/az-data-pipeline-static-analysis/dist/
+
+# VS Code directories
+.vscode
+.history
+
+# Git directories
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build directories
+build
+out

@@ -1,0 +1,82 @@
+{
+  "manifestVersion": 1,
+  "version": "1.0.13",
+  "name": "Pipeline Analyzer",
+  "id": "azure-data-pipeline-static-analyzer",
+  "description": "This extension analyzes Azure Data Factory pipelines, warning users about issues like parallel execution limitations with variables. It flags potential problems based on predefined policies.",
+  "publisher": "PramodHegdeMS",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "icons": {
+    "default": "images/logo.png"
+  },
+  "files": [
+    {
+      "path": "buildandreleasetask/task.json",
+      "addressable": true
+    },
+    {
+      "path": "buildandreleasetask/tsconfig.json",
+      "addressable": true
+    },
+    {
+      "path": "buildandreleasetask/src/index.ts",
+      "addressable": true
+    },
+    {
+      "path": "buildandreleasetask/src/index.spec.ts",
+      "addressable": true
+    },
+    {
+      "path": "buildandreleasetask/src/pipelineTasks.ts",
+      "addressable": true
+    },
+    {
+      "path": "buildandreleasetask/src/namingConventionTask.ts",
+      "addressable": true
+    },    
+    {
+      "path": "buildandreleasetask/src/parallelProcessingTask.ts",
+      "addressable": true
+    },
+    {
+      "path": "buildandreleasetask/dist",
+      "addressable": true
+    },
+    {
+      "path": "images",
+      "addressable": true
+    },
+    {
+      "path": "config",
+      "addressable": true
+    },
+    {
+      "path": "README.md",
+      "addressable": true
+    },
+    {
+      "path": "LICENSE",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "staticAnalysis",
+      "type": "ms.vss-distributed-task.task",
+      "description": "Analyzes the pipeline elements for violations",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "buildandreleasetask"
+      }
+    }
+  ]
+}
